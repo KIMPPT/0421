@@ -10,7 +10,6 @@ export default function NavHeader() {
       >
         Home
       </NavLink>
-      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
       <NavLink
         to="/storylist"
         className={({ isActive }) => (isActive ? "check on" : "check")}
