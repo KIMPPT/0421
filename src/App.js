@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./page/Home";
 import StoryList from "./page/StoryList";
 import NavHeader from "./components/NavHeader";
+import Fruit from "./page/Fruit";
 import { DataProvider } from "./context/DataContext";
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       <DataProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/storylist" element={<StoryList />} />
+          <Route path="/storylist" element={<StoryList />}>
+            <Route path=":name" element={<Fruit/>}/>
+            </Route>
+
         </Routes>
       </DataProvider>
     </div>
