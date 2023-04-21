@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { useContext } from "react";
 import DataContext from "../context/DataContext";
 import "../css/storylist.css";
@@ -10,9 +10,13 @@ export default function StoryList() {
     <div>
       <h1>StoryList</h1>
       {fruitname.map((fruit, i) => (
-        <Link to={`/storylist/${fruit}`} key={i} className="storynav">
+        <NavLink
+          to={`/storylist/${fruit}`}
+          key={i}
+          className={({ isActive }) => (isActive ? "storynavon" : "storynav")}
+        >
           {fruit}Story &nbsp;&nbsp;&nbsp;&nbsp;
-        </Link>
+        </NavLink>
       ))}
       <Outlet />
     </div>

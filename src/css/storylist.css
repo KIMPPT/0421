@@ -2,4 +2,10 @@
 {
     color:black;
     text-decoration:none;
+    transition:color 0.5s;
+}
+.storynavon{
+    text-decoration:none;
+    color:magenta;
+    transition:color 0.5s;
 }

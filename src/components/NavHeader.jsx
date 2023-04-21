@@ -1,13 +1,23 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import '../css/NavHeader.css'
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import "../css/NavHeader.css";
 export default function NavHeader() {
   return (
     <div>
-        <Link to='/' className='linkstyle'>Home</Link>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <Link to='/storylist' className='linkstyle'>Story</Link>
-        <hr />
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "checked" : "normal")}
+      >
+        Home
+      </NavLink>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <NavLink
+        to="/storylist"
+        className={({ isActive }) => (isActive ? "checked" : "normal")}
+      >
+        Story
+      </NavLink>
+      <hr />
     </div>
-  )
+  );
 }

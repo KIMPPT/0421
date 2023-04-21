@@ -14,9 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/storylist" element={<StoryList />}>
-            <Route path=":name" element={<Fruit/>}/>
-            </Route>
-
+            <Route path=":name" element={<Fruit />} />
+          </Route>
         </Routes>
       </DataProvider>
     </div>
