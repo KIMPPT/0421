@@ -6,14 +6,14 @@ export default function NavHeader() {
     <div>
       <NavLink
         to="/"
-        className={({ isActive }) => (isActive ? "checked" : "normal")}
+        className={({ isActive }) => (isActive ? "check on" : "check")}
       >
         Home
       </NavLink>
       <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
       <NavLink
         to="/storylist"
-        className={({ isActive }) => (isActive ? "checked" : "normal")}
+        className={({ isActive }) => (isActive ? "check on" : "check")}
       >
         Story
       </NavLink>

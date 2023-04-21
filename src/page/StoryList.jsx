@@ -9,13 +9,14 @@ export default function StoryList() {
   return (
     <div>
       <h1>StoryList</h1>
+      <br />
       {fruitname.map((fruit, i) => (
         <NavLink
           to={`/storylist/${fruit}`}
           key={i}
-          className={({ isActive }) => (isActive ? "storynavon" : "storynav")}
+          className={({ isActive }) => (isActive ? "storynav on" : "storynav")}
         >
-          {fruit}Story &nbsp;&nbsp;&nbsp;&nbsp;
+          {fruit}Story
         </NavLink>
       ))}
       <Outlet />
