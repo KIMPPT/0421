@@ -14,3 +14,6 @@ span{
     font-size:2rem;
     margin:0 50px;
 }
+
+/*NavLink와 Link는 a 디자인을 넣어서 바꾼다.
+Link의 경우 className이 안먹히는 경우도 있다*/

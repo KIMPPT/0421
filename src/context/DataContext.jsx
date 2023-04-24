@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+//React에 있는 createContext함수를 따로 불러서 사용도 가능하다. import {createContext}=from 'react'
 let DataContext=React.createContext("");
 let DataProvider=({children})=>{
     let [fruit,setFruit]=useState(
