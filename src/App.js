@@ -14,6 +14,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/storylist" element={<StoryList />}>
+            {/*URL/storylist/:name
+            에서 storylist를 들고올려면 useLocation
+            name부분을 들고올려면 useparams를 쓴다.
+            */}
             <Route path=":name" element={<Fruit />} />
           </Route>
         </Routes>
